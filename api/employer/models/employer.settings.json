@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employers",
+  "info": {
+    "name": "Employer"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "completeName": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "companyName": {
+      "type": "string",
+      "required": true
+    },
+    "contactNumber": {
+      "type": "string",
+      "required": true
+    },
+    "companyAddress": {
+      "type": "text",
+      "required": true
+    },
+    "categories": {
+      "type": "string",
+      "required": true
+    },
+    "numberOfNeededWorkers": {
+      "type": "integer",
+      "required": true
+    },
+    "country": {
+      "type": "string",
+      "required": true
+    },
+    "inquiry": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

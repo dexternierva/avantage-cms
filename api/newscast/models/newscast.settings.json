@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "newscasts",
+  "info": {
+    "name": "Newscast"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "category": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "excerpt": {
+      "type": "text",
+      "required": true
+    },
+    "url": {
+      "type": "string"
+    },
+    "featuredImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "details": {
+      "type": "richtext"
+    }
+  }
+}
