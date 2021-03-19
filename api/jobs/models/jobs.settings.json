@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs",
+  "info": {
+    "name": "Jobs"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "where": {
+      "type": "string",
+      "required": true
+    },
+    "companyName": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    },
+    "quallifications": {
+      "type": "string",
+      "required": true
+    },
+    "accreditationNumber": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "string",
+      "required": true
+    },
+    "featuredImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "details": {
+      "type": "richtext",
+      "required": true
+    },
+    "excerpt": {
+      "type": "text"
+    }
+  }
+}
