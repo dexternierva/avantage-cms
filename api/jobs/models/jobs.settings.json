@@ -46,16 +46,16 @@
       "plugin": "upload",
       "required": false
     },
-    "programs": {
-      "collection": "programs",
-      "via": "job"
-    },
     "details": {
       "type": "richtext",
       "required": true
     },
     "excerpt": {
       "type": "text"
+    },
+    "subprograms": {
+      "via": "parentjob",
+      "collection": "program"
     }
   }
 }

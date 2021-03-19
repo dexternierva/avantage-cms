@@ -32,9 +32,9 @@
       "plugin": "upload",
       "required": false
     },
-    "job": {
-      "via": "program",
-      "model": "jobs"
-    },
+    "parentjob": {
+      "model": "jobs",
+      "via": "subprograms"
+    }
   }
 }
