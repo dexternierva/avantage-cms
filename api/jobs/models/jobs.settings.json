@@ -47,7 +47,7 @@
       "required": false
     },
     "programs": {
-      "collection": "program",
+      "collection": "programs",
       "via": "job"
     },
     "details": {
