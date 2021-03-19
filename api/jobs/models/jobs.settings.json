@@ -46,6 +46,10 @@
       "plugin": "upload",
       "required": false
     },
+    "programs": {
+      "collection": "program",
+      "via": "job"
+    },
     "details": {
       "type": "richtext",
       "required": true
