@@ -49,7 +49,7 @@ module.exports = {
             Qualified applicants will then receive a link to book their online assessment and interview at
             their preferred schedule.
 
-            Thank you and stay safe!
+            Thank you very much and stay safe!
             `,
         });
 
